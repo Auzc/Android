@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/home_shape">
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好！请登录"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/action_settings"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/user_info_container"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-80dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_box"
+
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_vertical">
+            <Button
+                android:id="@+id/button_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户未登录"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_button_test"
+
+                android:textStyle="bold"
+                android:textSize="18sp"
+                 />
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="None"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/circular_border"
+            android:src="@drawable/default_profile_image" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_box"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="个人资料卡" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_box"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="位置：" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="左边锋" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_box"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_edit"
+                />
+
+            <Button
+                android:id="@+id/button_message_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button_test"
+                android:gravity="left|center"
+                android:text="个人信息"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/right_array"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_message"
+                />
+            <Button
+                android:id="@+id/watting01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_button_test"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="我的收藏" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/right_array"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_message"
+                />
+            <Button
+                android:id="@+id/watting02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_button_test"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="我的关注" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/right_array"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_message"
+                />
+            <Button
+                android:id="@+id/watting022"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_button_test"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="收到的赞" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/right_array"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_message"
+                />
+            <Button
+                android:id="@+id/watting011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_button_test"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="收到评论" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/right_array"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_height="1dp"
+            android:background="@color/background_gray" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
